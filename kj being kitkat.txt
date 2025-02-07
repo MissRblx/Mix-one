@@ -7,6 +7,22 @@ for _, accessory in pairs(character:GetChildren()) do
             end
         end
 wait(0.3)
+
+local Larm = game.Players.LocalPlayer.Character["Left Arm"]
+Larm.Transparency = 1
+local Rarm = game.Players.LocalPlayer.Character["Right Arm"]
+Rarm.Transparency = 1
+local tor = game.Players.LocalPlayer.Character["Torso"]
+tor.Transparency = 1
+local torso = game.Players.LocalPlayer.Character.Torso
+torso.Transparency = 1
+local Head = game.Players.LocalPlayer.Character["Head"]
+Head.Transparency = 1
+local Face = game.Players.LocalPlayer.Character.Head.face
+Face.Transparency = 1
+
+
+
 --right
 
 local assetId = 114368458356247 
@@ -87,11 +103,6 @@ if leftcursefisteffect then
     end
 end
 
-local Larm = game.Players.LocalPlayer.Character["Left Arm"]
-Larm.Transparency = 1
-local Rarm = game.Players.LocalPlayer.Character["Right Arm"]
-Rarm.Transparency = 1
-
 --torso
 local assetId = 130482903931267 
 
@@ -130,8 +141,6 @@ if rightcursefisteffect then
     end
 end
 
-local tor = game.Players.LocalPlayer.Character["Torso"]
-tor.Transparency = 1
 
 --torsocoat
 local assetId = 88907403530897 
@@ -172,8 +181,6 @@ if rightcursefisteffect then
     end
 end
 
-local torso = game.Players.LocalPlayer.Character.Torso
-torso.Transparency = 1
 
 --rightcoat
 
@@ -377,10 +384,6 @@ if leftcursefisteffect then
     end
 end
 
-local Head = game.Players.LocalPlayer.Character["Head"]
-Head.Transparency = 1
-local Face = game.Players.LocalPlayer.Character.Head.face
-Face.Transparency = 1
 --hair
 
 local assetId = 109850781060267 
