@@ -6,7 +6,7 @@ for _, accessory in pairs(character:GetChildren()) do
                 accessory:Destroy()
             end
         end
-
+wait(0.3)
 --right
 
 local assetId = 114368458356247 
