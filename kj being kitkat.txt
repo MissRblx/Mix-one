@@ -6,22 +6,6 @@ for _, accessory in pairs(character:GetChildren()) do
                 accessory:Destroy()
             end
         end
-wait(0.3)
-
-local Larm = game.Players.LocalPlayer.Character["Left Arm"]
-Larm.Transparency = 1
-local Rarm = game.Players.LocalPlayer.Character["Right Arm"]
-Rarm.Transparency = 1
-local tor = game.Players.LocalPlayer.Character["Torso"]
-tor.Transparency = 1
-local torso = game.Players.LocalPlayer.Character.Torso
-torso.Transparency = 1
-local Head = game.Players.LocalPlayer.Character["Head"]
-Head.Transparency = 1
-local Face = game.Players.LocalPlayer.Character.Head.face
-Face.Transparency = 1
-
-
 
 --right
 
@@ -55,7 +39,7 @@ if rightcursefisteffect then
                     local weld = Instance.new("Weld")
                     weld.Part0 = rightArm -- The part you're welding to
                     weld.Part1 = part -- The part you're welding
-                    weld.C0 = CFrame.new(0, -0.15, 0) * CFrame.Angles(0, 0, 0)
+                    weld.C0 = CFrame.new(0, -0.03, 0) * CFrame.Angles(0, 0, 0)
                     weld.Parent = part -- Parent the weld to the part being welded
                 end
             end
@@ -95,13 +79,18 @@ if leftcursefisteffect then
                     local weld = Instance.new("Weld")
                     weld.Part0 = leftArm -- The part you're welding to
                     weld.Part1 = part -- The part you're welding
-                    weld.C0 = CFrame.new(0, -0.15, 0) * CFrame.Angles(0, 0, 0)
+                    weld.C0 = CFrame.new(0, -0.03, 0) * CFrame.Angles(0, 0, 0)
                     weld.Parent = part -- Parent the weld to the part being welded
                 end
             end
         end
     end
 end
+
+local Larm = game.Players.LocalPlayer.Character["Left Arm"]
+Larm.Transparency = 1
+local Rarm = game.Players.LocalPlayer.Character["Right Arm"]
+Rarm.Transparency = 1
 
 --torso
 local assetId = 130482903931267 
@@ -141,6 +130,8 @@ if rightcursefisteffect then
     end
 end
 
+local tor = game.Players.LocalPlayer.Character["Torso"]
+tor.Transparency = 1
 
 --torsocoat
 local assetId = 88907403530897 
@@ -173,7 +164,7 @@ if rightcursefisteffect then
                     local weld = Instance.new("Weld")
                     weld.Part0 = rightArm -- The part you're welding to
                     weld.Part1 = part -- The part you're welding
-                    weld.C0 = CFrame.new(0, -0.9, 0.27) * CFrame.Angles(0, 0, 0)
+                    weld.C0 = CFrame.new(0, -0.75, 0.27) * CFrame.Angles(0, 0, 0)
                     weld.Parent = part -- Parent the weld to the part being welded
                 end
             end
@@ -181,6 +172,8 @@ if rightcursefisteffect then
     end
 end
 
+local torso = game.Players.LocalPlayer.Character.Torso
+torso.Transparency = 1
 
 --rightcoat
 
@@ -214,7 +207,7 @@ if rightcursefisteffect then
                     local weld = Instance.new("Weld")
                     weld.Part0 = rightArm -- The part you're welding to
                     weld.Part1 = part -- The part you're welding
-                    weld.C0 = CFrame.new(0.03, 0.3, 0) * CFrame.Angles(0, 0, 0)
+                    weld.C0 = CFrame.new(0.03, 0.35, 0) * CFrame.Angles(0, 0, 0)
                     weld.Parent = part -- Parent the weld to the part being welded
                 end
             end
@@ -254,7 +247,7 @@ if leftcursefisteffect then
                     local weld = Instance.new("Weld")
                     weld.Part0 = leftArm -- The part you're welding to
                     weld.Part1 = part -- The part you're welding
-                    weld.C0 = CFrame.new(-0.03, 0.3, 0) * CFrame.Angles(0, 0, 0)
+                    weld.C0 = CFrame.new(-0.03, 0.35, 0) * CFrame.Angles(0, 0, 0)
                     weld.Parent = part -- Parent the weld to the part being welded
                 end
             end
@@ -295,7 +288,7 @@ if leftcursefisteffect then
                     local weld = Instance.new("Weld")
                     weld.Part0 = leftArm -- The part you're welding to
                     weld.Part1 = part -- The part you're welding
-                    weld.C0 = CFrame.new(0.2, 1.1, 0.15) * CFrame.Angles(0, 0, 0)
+                    weld.C0 = CFrame.new(0.2, 1.15, 0.15) * CFrame.Angles(0, 0, 0)
                     weld.Parent = part -- Parent the weld to the part being welded
                 end
             end
@@ -384,6 +377,10 @@ if leftcursefisteffect then
     end
 end
 
+local Head = game.Players.LocalPlayer.Character["Head"]
+Head.Transparency = 1
+local Face = game.Players.LocalPlayer.Character.Head.face
+Face.Transparency = 1
 --hair
 
 local assetId = 109850781060267 
